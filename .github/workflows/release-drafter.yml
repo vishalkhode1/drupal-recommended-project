@@ -19,6 +19,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_PR: ${{ github.event.pull_request.number }}
   update_release_draft:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/1.x'
     runs-on: ubuntu-latest
     permissions:
       contents: write
