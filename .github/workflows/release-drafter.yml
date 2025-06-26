@@ -27,6 +27,6 @@ jobs:
     steps:
       - uses: release-drafter/release-drafter@v6
         with:
-          config-name: release-drafter-1.x.yml # located in .github/ in default branch
+          config-name: release-drafter-1.x.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
