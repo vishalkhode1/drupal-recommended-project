@@ -16,7 +16,7 @@ jobs:
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.actor.login == 'dependabot[bot]'
     outputs:
-      base_branch: ${{ steps.source-run-info.outputs.baseBranchName }}
+      base_branch: ${{ steps.source-run-info.outputs.targetBranch }}
     steps:
     - name: "Get PR information"
       uses: potiuk/get-workflow-origin@v1_4
