@@ -53,10 +53,20 @@ jobs:
           fi
           echo "Using config file: $CONFIG_NAME"
           echo "config_name=$CONFIG_NAME" >> $GITHUB_OUTPUT
+
+          # Determine Latest Flag
+           if [[ "$BASE_BRANCH" == "3.x" ]]; then
+             MARK_LATEST="true"
+           else
+             MARK_LATEST="false"
+           fi
+           echo "Mark as latest: $MARK_LATEST"
+           echo "mark_latest=$MARK_LATEST" >> $GITHUB_OUTPUT
       - uses: release-drafter/release-drafter@v6
         with:
           publish: true
           commitish: ${{ needs.merge.outputs.base_branch }}
           config-name: ${{ steps.drafter_config.outputs.config_name }}
+          latest: ${{ steps.drafter_options.outputs.mark_latest }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
