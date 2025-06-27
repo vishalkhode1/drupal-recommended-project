@@ -36,6 +36,7 @@ jobs:
       - uses: release-drafter/release-drafter@v6
         with:
           publish: true
-          config-name: release-drafter.yml
+          config-name: release-drafter-2.x.yml
+          commitish: '2.x'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
