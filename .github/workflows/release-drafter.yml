@@ -19,7 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_PR: ${{ github.event.pull_request.number }}
   update_release_draft:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/2.x'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -28,7 +27,6 @@ jobs:
       - uses: release-drafter/release-drafter@v6
         with:
           config-name: release-drafter-2.x.yml
-          publish: false
-          commitish: '2.x'          
+          commitish: '2.x'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
