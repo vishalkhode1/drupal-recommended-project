@@ -135,16 +135,16 @@
         },
         {
             "name": "acquia/drupal-recommended-settings",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/drupal-recommended-settings.git",
-                "reference": "7ccd443d5e0b3add1324c656ae8a86d8084d7f4b"
+                "reference": "4a7d91424484ed72e92c6e0d2709ff8a657de161"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/drupal-recommended-settings/zipball/7ccd443d5e0b3add1324c656ae8a86d8084d7f4b",
-                "reference": "7ccd443d5e0b3add1324c656ae8a86d8084d7f4b",
+                "url": "https://api.github.com/repos/acquia/drupal-recommended-settings/zipball/4a7d91424484ed72e92c6e0d2709ff8a657de161",
+                "reference": "4a7d91424484ed72e92c6e0d2709ff8a657de161",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
                 "ergebnis/composer-normalize": "^2.30.2",
                 "phpro/grumphp-shim": "^2.2",
-                "phpunit/phpunit": "^9 || ^10"
+                "phpunit/phpunit": "^9 || ^10 || ^11"
             },
             "type": "composer-plugin",
             "extra": {
@@ -195,9 +195,9 @@
             "support": {
                 "docs": "https://docs.acquia.com/drupal-recommended-settings/",
                 "issues": "https://github.com/acquia/drupal-recommended-settings/issues",
-                "source": "https://github.com/acquia/drupal-recommended-settings/tree/1.1.1"
+                "source": "https://github.com/acquia/drupal-recommended-settings/tree/1.1.2"
             },
-            "time": "2025-02-12T15:45:16+00:00"
+            "time": "2025-07-07T14:29:09+00:00"
         },
         {
             "name": "acquia/memcache-settings",
@@ -2382,16 +2382,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "12.5.0",
+            "version": "12.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "48dc17e0678e9ac162d4598c9e0a7e9009344ed8"
+                "reference": "7fe0a492d5126c457c5fb184c4668a132b0aaac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/48dc17e0678e9ac162d4598c9e0a7e9009344ed8",
-                "reference": "48dc17e0678e9ac162d4598c9e0a7e9009344ed8",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/7fe0a492d5126c457c5fb184c4668a132b0aaac6",
+                "reference": "7fe0a492d5126c457c5fb184c4668a132b0aaac6",
                 "shasum": ""
             },
             "require": {
@@ -2514,7 +2514,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/12.5.0"
+                "source": "https://github.com/drush-ops/drush/tree/12.5.3"
             },
             "funding": [
                 {
@@ -2522,7 +2522,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-18T17:30:17+00:00"
+            "time": "2024-08-02T11:57:29+00:00"
         },
         {
             "name": "egulias/email-validator",
